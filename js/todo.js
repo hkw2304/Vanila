@@ -15,14 +15,12 @@ function printList(newListValue) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   const button = document.createElement("button");
-  const div = document.createElement("div");
   li.id = newListValue.id;
   span.innerHTML = newListValue.text;
   button.innerHTML = "🧨";
   button.addEventListener("click", deleteListValue);
-  div.appendChild(span);
-  div.appendChild(button);
-  li.appendChild(div);
+  li.appendChild(span);
+  li.appendChild(button);
   todoList.appendChild(li);
 }
 
