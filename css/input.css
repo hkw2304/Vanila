@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap");
+body {
+  font-family: "Lugrasimo", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+.hidden {
+  display: none;
+}
+.wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#clock {
+  font-size: 100px;
+  position: relative;
+  top: -250px;
+}
+img {
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px 5px rgba(40, 37, 37, 0.806);
+  opacity: 0.8;
+  z-index: -5;
+}
+input {
+  border: none;
+  opacity: 0.5;
+  padding: 20px;
+  border-radius: 10px;
+}
+input[type="submit"] {
+  display: none;
+}
+#login-form {
+  position: absolute;
+  top: -30px;
+}
+#greeting {
+  position: absolute;
+  top: -50px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+#quote {
+  width: 630px;
+  position: relative;
+  left: -300px;
+  bottom: -280px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#weather {
+  position: relative;
+  right: -490px;
+  bottom: -255px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#todo-form {
+  position: absolute;
+  bottom: 200px;
+}
+ul {
+  list-style: none;
+  position: absolute;
+  top: 150px;
+  font-weight: bold;
+  overflow: scroll;
+  height: 300px;
+  width: 200px;
+  overflow-x: scroll;
+}
+ul::-webkit-scrollbar {
+  display: none;
+}
+li {
+  font-size: 25px;
+}
+button {
+  border: none;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+}
